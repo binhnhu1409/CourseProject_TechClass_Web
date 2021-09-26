@@ -13,3 +13,6 @@ function change_image() {
   x[myIndex-1].style.display = "block";
   setTimeout (change_image, 3000);
 }
+//show current date and time at the bottom of homepage
+var show_time = new Date();
+document.getElementById("show_date_time").innerHTML = show_time;
