@@ -14,7 +14,7 @@ body{
     top: 0;
     left: 0;
     background-color: inherit;
-    z-index: 000;
+    z-index: 1000;
     width: 100%
 }
 div.container-box-left{
@@ -61,4 +61,29 @@ p#homepage-content{
   font-size: 15pt;
   padding-left: 50px;
   padding-right: 30px;
+}
+div.gallery {
+  border: 1px solid #FFE3E3;
+}
+div.gallery:hover {
+  border: 1px solid #CEE5D0;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.pic-description {
+  color: #FCD2D1;
+  font-family: Ebrima;
+  font-size: 15pt;
+  padding: 15px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
 }
