@@ -16,18 +16,3 @@ function change_image() {
 //show current date and time at the bottom of homepage
 var show_time = new Date();
 document.getElementById("show_date_time").innerHTML = show_time;
-
-// Automatic Slideshow - change image every 3 seconds - gallery nature
-var slide_index = 0;
-slideshow();
-function slideshow() {
-  var j;
-  var y = document.getElementsByClassName("slideshow_nature");
-  for (j = 0; j<y.length; j++) {
-    y[j].style.display = "none";
-  }
-  slide_index++;
-  if (slide_index > y.length) {slide_index = 1}
-  y[slide_index-1].style.display = "block";
-  setTimeout (slideshow, 3000);
-}

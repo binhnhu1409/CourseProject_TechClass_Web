@@ -62,18 +62,24 @@ p#homepage-content{
   padding-left: 50px;
   padding-right: 30px;
 }
+h1.page-title {
+  color: #D7E9F7;
+  font-size: 30pt;
+  font-family: Ink Free;
+  text-align: center;
+}
 div.gallery {
-  border: 1px solid #FFE3E3;
+  border: 1px dashed #D7E9F7;
 }
 div.gallery:hover {
-  border: 1px solid #CEE5D0;
+  border: 1px solid #FCD2D1;
 }
 div.gallery img {
   width: 100%;
   height: auto;
 }
 div.pic-description {
-  color: #FCD2D1;
+  color: #D7E9F7;
   font-family: Ebrima;
   font-size: 15pt;
   padding: 15px;
@@ -86,4 +92,15 @@ div.pic-description {
   padding: 0 6px;
   float: left;
   width: 24.99999%;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
 }
