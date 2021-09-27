@@ -8,12 +8,14 @@ body{
   background-color: #4A403A;
   position: absolute;
 }
+a:hover { text-decoration: underline; text-decoration-color:#D7E9F7; }
+a:active {color: #86BDE7;}
 .header-box-contain-navi-bar {
     box-sizing: border-box;
-    position: absolute;
     top: 0;
     left: 0;
-    background-color: inherit;
+    position: absolute;
+    background-color: #4A403A;
     z-index: 1000;
     width: 100%
 }
@@ -43,7 +45,7 @@ li.smallest-container{
   display: inline-block;
   vertical-align: middle;
 }
-.navigation_bar{
+.navigation-bar{
    color: #D7E9F7;
    font-size: 20pt;
    font-family: Comic Sans MS;
@@ -55,7 +57,7 @@ div.buffer-box{
   margin: 0.5em 0.5em 0.5em 0.5em;
   padding: 0.36em 0.36em 0.36em 0.36em;
 }
-p#homepage-content{
+p.content{
   color: #FCD2D1;
   font-family: Ebrima;
   font-size: 15pt;
@@ -68,6 +70,7 @@ h1.page-title {
   font-family: Ink Free;
   text-align: center;
 }
+/* gallery css*/
 div.gallery {
   border: 1px dashed #D7E9F7;
 }
@@ -102,5 +105,21 @@ div.pic-description {
 @media only screen and (max-width: 500px) {
   .responsive {
     width: 100%;
+  }
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+/* On smaller screens, descease text size */
+@media only screen and (max-width: 300px) {
+  .content #show_date_time {
+    font-size: 10px;
+  }
+  .navigation-bar {
+    font-size: 13.5pt;
+  }
+  .container-box-left {
+    font-size: 15pt;
   }
 }
