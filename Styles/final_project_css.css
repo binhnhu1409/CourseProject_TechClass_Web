@@ -6,7 +6,6 @@ html {
 }
 body{
   background-color: #4A403A;
-  position: absolute;
 }
 a:hover { text-decoration: underline; text-decoration-color:#D7E9F7; }
 a:active {color: #86BDE7;}
@@ -70,7 +69,20 @@ h1.page-title {
   font-family: Ink Free;
   text-align: center;
 }
-/* gallery css*/
+/* On smaller screens, descease text size */
+@media only screen and (max-width: 300px) {
+  .content #show_date_time {
+    font-size: 10px;
+  }
+  .navigation-bar {
+    font-size: 13.5pt;
+  }
+  .container-box-left {
+    font-size: 15pt;
+  }
+}
+
+/* gallery + project css*/
 div.gallery {
   border: 1px dashed #D7E9F7;
 }
@@ -105,21 +117,5 @@ div.pic-description {
 @media only screen and (max-width: 500px) {
   .responsive {
     width: 100%;
-  }
-}
-.responsive-image {
-  max-width: 100%;
-  height: auto;
-}
-/* On smaller screens, descease text size */
-@media only screen and (max-width: 300px) {
-  .content #show_date_time {
-    font-size: 10px;
-  }
-  .navigation-bar {
-    font-size: 13.5pt;
-  }
-  .container-box-left {
-    font-size: 15pt;
   }
 }
