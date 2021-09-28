@@ -27,5 +27,5 @@ function back_normal(project_image) {
   project_image.style.width = "600px";
 }
 function loaded () {
-  alert ("The GitHub page of project 2 is loaded.")
+  window.alert ("Project page is loading.");
 }

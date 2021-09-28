@@ -7,7 +7,7 @@
     <meta name="description" content="Project page in my personal website page">
     <title>Nguyen Tran Binh Nhu's project</title>
   </head>
-  <body>
+  <body onload = loaded()>
     <header>
       <h1 class = "page-title">Some of my projects</h1>
     </header>
@@ -23,15 +23,16 @@
 
     <div class="responsive">
       <div class="gallery">
-        <a onload = loaded() target="_blank" href="https://github.com/binhnhu1409/Nhu_python_journey/blob/main/exploratory_data_python_final_project.ipynb">
+        <a target="_blank" href="https://github.com/binhnhu1409/Nhu_python_journey/blob/main/exploratory_data_python_final_project.ipynb">
           <img src="..\\CourseProject_TechClass_Web\Images\project2.JPG" alt="Exploratory Data Analysis" width="600px" height = "400px" >
         </a>
-        <div class="pic-description">A final project of Exploratory Data Analysis with Python Course, offered by Metropolia AMKoodari: Analysing 'Carvana' dataset</div>
+        <div class="pic-description" id ="scroll-happen">A final project of 'Exploratory Data Analysis with Python' Course with TechClass,
+          <br><br>
+          offered by Metropolia AMKoodari: Analysing 'Carvana' dataset</div>
       </div>
+      <p style="color:#D7E9F7; font-size:18px; text-align:center; font-family:Ebrima">You've scrolled over the description of this project <span id="scroll-time">0</span> times.</p>
     </div>
 
-    <script type="text/javascript" src="JS/final_project_javascript.js">
-    </script>
 
     <div class="responsive">
       <div class="gallery">
@@ -41,6 +42,13 @@
         <div class="pic-description">A final project of Developing Web Platform, offered by Metropolia AMKoodari: My first personal website</div>
       </div>
     </div>
+
+    <script type="text/javascript" src="JS/final_project_javascript.js">
+      var scroll-time = 0;
+      function counting_scroll() {
+        document.getElementById("scroll-time").innerHTML = scroll-time += 1;
+      }
+    </script>
 
     </body>
   </html>

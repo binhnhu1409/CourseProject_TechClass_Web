@@ -119,3 +119,10 @@ div.pic-description {
     width: 100%;
   }
 }
+
+/*only happen in project page */
+div#scroll-happen {
+  overflow: scroll;
+  width: inherit;
+  height: 100px;
+}
