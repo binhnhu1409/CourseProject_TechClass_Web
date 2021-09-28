@@ -16,3 +16,9 @@ function change_image() {
 //show current date and time at the bottom of homepage
 var show_time = new Date();
 document.getElementById("show_date_time").innerHTML = show_time;
+
+//skill-page
+document.getElementById("add-new").onclick = function() {
+ var counting_skill = document.getElementById("skill-list");
+ var new_skill 
+}
