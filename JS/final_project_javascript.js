@@ -29,3 +29,8 @@ function back_normal(project_image) {
 function loaded () {
   window.alert ("Project page is loading.");
 }
+var scrolled_times = 0;
+function counting_scroll() {
+  console.log(scrolled_times);
+  document.getElementById("scroll-time").innerHTML = scrolled_times += 1;
+}
