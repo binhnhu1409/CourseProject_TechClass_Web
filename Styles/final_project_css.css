@@ -9,6 +9,7 @@ body{
 }
 a:hover { text-decoration: underline; text-decoration-color:#D7E9F7; }
 a:active {color: #86BDE7;}
+
 .header-box-contain-navi-bar {
     box-sizing: border-box;
     top: 0;
@@ -56,7 +57,7 @@ div.buffer-box{
   margin: 0.5em 0.5em 0.5em 0.5em;
   padding: 0.36em 0.36em 0.36em 0.36em;
 }
-p.content{
+.content{
   color: #FCD2D1;
   font-family: Ebrima;
   font-size: 15pt;
@@ -125,4 +126,22 @@ div#scroll-happen {
   overflow: scroll;
   width: inherit;
   height: 100px;
+}
+
+/*skill page*/
+.text-inline-image {
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+.box-contain-content {
+  background-color: #889EAF;
+  font-family: Comic Sans MS;
+  font-size: 26px;
+  color: #FCD2D1;
+  width: 600px;
+  margin: 10px 68px;
+  padding: 28px;
+  display: block;
+  visibility: visible;
+  border-radius: 15px;
 }
