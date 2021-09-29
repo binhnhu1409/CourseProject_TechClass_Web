@@ -13,8 +13,9 @@
     </header>
     <div class="content">
       <ul id="skill-list">
-        <li>Python
+        <li id="item1" class = "ListItem">Python
           <ul>
+            <li id="new_skill_here"> <img id = "new_photo_here" src="" alt=""> </li>
             <li>Code in Place 2021, offered online by Stanford University
               <a target="_blank" href="https://codeinplace.stanford.edu/2021/showcase/1127">
                 <img src="..\\CourseProject_TechClass_Web\Images\skill1.JPG" alt="my final project of the 1st Python course" class = "text-inline-image" width="100" height = "36">
@@ -27,35 +28,35 @@
             </li>
           </ul>
         </li>
-        <li >Version Control with Git
+        <li id="item2" class = "ListItem">Version Control with Git
           <a target="_blank" href="https://techclass.com/certificate/VSJR4GVD">
             <img src="..\\CourseProject_TechClass_Web\Images\skill4.JPG" alt="certificate of completion" class = "text-inline-image" width="100" height = "70  ">
           </a>
         </li>
-        <li >Computational Thinking
+        <li id="item3" class = "ListItem">Computational Thinking
           <a target="_blank" href="https://www.coursera.org/account/accomplishments/verify/Q6WNMTB9XZA3">
             <img src="..\\CourseProject_TechClass_Web\Images\skill5.JPG" alt="certificate of completion" class = "text-inline-image" width="100" height = "70  ">
           </a>
         </li>
-        <li >Search Engine Optimization
+        <li id="item4" class = "ListItem">Search Engine Optimization
           <a target="_blank" href="https://techclass.com/certificate/7SY1K8NF">
             <img src="..\\CourseProject_TechClass_Web\Images\skill3.JPG" alt="certificate of completion" class = "text-inline-image" width="100" height = "70  ">
           </a>
         </li>
-        <li>HTML-CSS-JavaScript</li>
-        <li>AutoCad</li>
-        <li>Basic Photoshop</li>
+        <li id="item5" class = "ListItem">HTML-CSS-JavaScript</li>
+        <li id="item6" class = "ListItem">AutoCad</li>
+        <li id="item7" class = "ListItem">Basic Photoshop</li>
       </ul>
     </div>
 
-    <form class="box-contain-content" action="skill_page.html" method="get">
+    <form id="SkillForm" class="box-contain-content" method="post">
       <fieldset>
         <legend>Adding more skills</legend>
         <label style = "font-size:20px"> Skill:
-          <input type="text" name="skill_set"></label> <br>
+          <input id="skill_name" type="text" name="skill_set"></label> <br>
         <label style = "font-size:20px"> Upload a photo related to the skill:
-          <input type="file" name="photo"></label> <br>
-        <input id="add-new" type="submit" name="" value="Submit">
+          <input id="skill_photo" type="file" name="photo"></label> <br>
+        <button type="button" id="click_to_add">Submit</button>
       </fieldset>
     </form>
 
@@ -65,7 +66,7 @@
       <a target="_blank" href="https://github.com/binhnhu1409/CourseProject_TechClass_Web/blob/main/Images/Nhu_CV.pdf" >PDF file</a>
     </div>
 
-    <script type="text/javascript" src="JS/final_project_javascript.js">
+    <script type="text/javascript" src="JS/skill.js">
     </script>
 
     </body>
