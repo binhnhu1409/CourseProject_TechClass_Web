@@ -16,9 +16,3 @@ function change_image() {
 //show current date and time at the bottom of homepage
 var show_time = new Date();
 document.getElementById("show_date_time").innerHTML = show_time;
-
-//skill-page
-var counting_skill = document.getElementsByClassName("ListItem ");
-document.getElementById("click_to_add").onclick = function() {skillFunction()};
-
-//contact page:

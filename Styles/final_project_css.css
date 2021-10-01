@@ -146,14 +146,11 @@ div#scroll-happen {
   border-radius: 15px;
 }
 
-/* styling home button*/
-button.home_btn{
-  margin: 15px;
-  padding: 15px 32px;
-  background-color: #889EAF;
-  color: #FCD2D1;
-  font-family: Comic Sans MS;
-  font-size: 20px;
-  border-radius: 10px;
-  box-shadow: 8px 8px 30px #D7E9F7;
+/*styling menu*/
+.sideNavi {
+text-align: right;
+}
+.sideNavi a {
+  padding: 8px 30px 8px 8px;
+  transition: 0.3s;
 }
