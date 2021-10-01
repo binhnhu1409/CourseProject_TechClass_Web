@@ -12,7 +12,44 @@
       <h1 class = "page-title">Contact me</h1>
     </header>
 
-    <script type="text/javascript" src="JS/final_project_javascript.js">
+    <p class="content">It would be nice of you if you could give me some feedback to improve my website. <br>
+    Please email me at <span style = "color:#D7E9F7">binhnhu1409@gmail.com.</span> <br>
+    You can also reach me through
+    <a target="_blank" href="https://www.linkedin.com/in/nhu-nguyen-tran-binh-b3a7ba172/" style="color:#D7E9F7">LinkedIn</a>. <br>
+    Or using the form below for all questions and comments. <br>
+    </p>
+
+    <form class="box-contain-content"  method="post">
+      <fieldset>
+        <legend>Drop me a comment about my first website</legend>
+        <label style = "font-size:20px"> First name*
+          <input id="fname" type="text" name="fname" required></label> <br>
+        <label style = "font-size:20px"> Last name*
+          <input id="lname" type="text" name="lname" required></label> <br>
+        <label style = "font-size:20px"> Gender*
+          <select name="gender">
+            <option value="male">Male</option>
+            <option value="male">Female</option>
+            <option value="male">Others</option>
+          </select> <br>
+        <label style = "font-size:20px"> Age*
+          <input type="text" name="age" id = "age" required></label> <br>
+        <label style = "font-size:20px"> Email address*
+          <input type="email" name="email" required></label> <br>
+        <label style = "font-size:20px"> Website address*
+          <input type="text" name="website_address" required></label> <br>
+        <label style = "font-size:20px"> Comment*
+          <input type="text" name="comment" required></label> <br>
+        <button type="button" >Reset</button>
+        <button type="button" name="submit_contact">Submit</button>
+      </fieldset>
+    </form>
+
+    <div style="text-align:right">
+      <button class="home_btn" type="button" value="Back Home" onclick="location.href='personal_homepage.html'">Back Home</button>
+    </div>
+
+    <script type="text/javascript" src="JS/contact.js">
     </script>
 
     </body>

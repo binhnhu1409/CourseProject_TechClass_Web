@@ -18,16 +18,7 @@ var show_time = new Date();
 document.getElementById("show_date_time").innerHTML = show_time;
 
 //skill-page
-var skill_number = 7;
-document.getElementById("add-new").onclick = function() {
- //var counting_skill = document.getElementsByTagNam("ListItem"); // thay document = body?
-// var new_skill = document.createElement ('li'); //create new element to append it later? before that remove the last in the list?
-//new_skill.setAttribute ("id", "item" + skill_number + ""); //minh can lam sao de lay dc cai input vao day
-//new_skill.innerHTML = "Item" + skill_number; //minh can lam sao de lay dc cai input vao day
- //new_skill.setAttribute ("onclick", "remove(this)");
- //list.appendChild(new_skill);
-}
-function remove(el) {
-  var last_skill = el;
-  last_skill.remove();
-}
+var counting_skill = document.getElementsByClassName("ListItem ");
+document.getElementById("click_to_add").onclick = function() {skillFunction()};
+
+//contact page:
