@@ -1,17 +1,17 @@
 //validate First name field: no bank, less than 25 characters
 document.getElementById("fname").onchange = function () {
-  var fname = document.getElementById("fname").value;
-  if (fname.length == 0) {
+  var firstname = document.getElementById("fname").value;
+  if (firstname.length == 0) {
     alert("First name field is required!");
   }
-  if (fname.length > 25) {
+  if (firstname.length > 25) {
     alert("Your first name needs to be less than 25 characters!");
   }
 }
 //validate Last name field: no bank, less than 25 characters
 document.getElementById("lname").onchange = function () {
-  var lname = document.getElementById("lname").value;
-  if (lname.length == 0) {
+  var lastname = document.getElementById("lname").value;
+  if (lastname.length == 0) {
     alert("Last name field is required!");
   }
   if (lname.length > 25) {
@@ -28,4 +28,15 @@ document.getElementById("age").onchange = function () {
   if (ageValue.length == 0) {
     alert("Age field is required!");
   }
+}
+document.getElementById("click_to_show").onclick = function () {display()};
+function display() {
+  document.getElementById("contact_display").innerHTML = ("This information is submitted:");
+  document.getElementById("fname_here").innerHTML = document.getElementById("fname").value;
+  document.getElementById("lname_here").innerHTML = document.getElementById("lname").value;
+  document.getElementById("gender_here").innerHTML = document.getElementById("gender").value;
+  document.getElementById("age_here").innerHTML = document.getElementById("age").value;
+  document.getElementById("mail_here").innerHTML = document.getElementById("mail").value;
+  document.getElementById("web_here").innerHTML = document.getElementById("web").value;
+  document.getElementById("comment_here").innerHTML =  document.getElementById("comment").value;
 }

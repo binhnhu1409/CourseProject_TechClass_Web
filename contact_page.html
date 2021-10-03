@@ -35,7 +35,7 @@
         <label style = "font-size:20px"> Last name*
           <input id="lname" type="text" name="lname" required></label> <br>
         <label style = "font-size:20px"> Gender*
-          <select name="gender">
+          <select id="gender" name="gender">
             <option value="male">Male</option>
             <option value="male">Female</option>
             <option value="male">Others</option>
@@ -43,15 +43,25 @@
         <label style = "font-size:20px"> Age*
           <input type="text" name="age" id = "age" required></label> <br>
         <label style = "font-size:20px"> Email address*
-          <input type="email" name="email" required></label> <br>
+          <input type="email" name="email" id="mail" required></label> <br>
         <label style = "font-size:20px"> Website address*
-          <input type="text" name="website_address" required></label> <br>
+          <input type="text" name="website_address" id="web" required></label> <br>
         <label style = "font-size:20px"> Comment*
-          <input type="text" name="comment" required></label> <br>
+          <input type="text" name="comment" id="comment" required></label> <br>
         <button type="button" >Reset</button>
-        <button type="button" name="submit_contact">Submit</button>
+        <button type="button" name="submit_contact" id="click_to_show">Submit</button>
       </fieldset>
     </form>
+
+    <div id="contact_display" class="content">
+      <p id="fname_here"></p>
+      <p id="lname_here"></p>
+      <p id="gender_here"></p>
+      <p id="age_here"></p>
+      <p id="mail_here"></p>
+      <p id="web_here"></p>
+      <p id="comment_here"></p>
+    </div>
 
     <script type="text/javascript" src="JS/contact.js">
     </script>
