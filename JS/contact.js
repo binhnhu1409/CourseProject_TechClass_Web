@@ -32,12 +32,11 @@ document.getElementById("age").onchange = function () {
 document.getElementById("click_to_show").onclick = function () {display()};
 function display() {
   document.getElementById("contact_display").innerHTML = ("This information is submitted:");
-  info = " Firtsname: " + fname.value + "-----";
-  info += " Lastname: " + lname.value + "-----";
-  info += " Gender: " + gender.value + "-----";
-  info += " Age: " + age.value + "-----";
-  info += " Email address: " + mail.value + "-----";
-  info += " Website address: " + web.value + "-----";
-  info += " Your comment: " + comment.value;
-  document.getElementById("display_information").innerHTML = info;
+  document.getElementById("fname_here").innerHTML = " Firtsname: " + fname.value;
+  document.getElementById("lname_here").innerHTML = " Lastname: " + lname.value;
+  document.getElementById("gender_here").innerHTML = " Gender: " + gender.value;
+  document.getElementById("age_here").innerHTML = " Age: " + age.value;
+  document.getElementById("mail_here").innerHTML = " Email address: " + mail.value;
+  document.getElementById("web_here").innerHTML = " Website address: " + web.value;
+  document.getElementById("comment_here").innerHTML = " Your comment: " + comment.value;
 }
