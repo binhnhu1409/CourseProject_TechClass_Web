@@ -34,7 +34,8 @@ function display() {
   document.getElementById("contact_display").innerHTML = ("This information is submitted:");
   document.getElementById("fname_here").innerHTML = " Firtsname: " + fname.value;
   document.getElementById("lname_here").innerHTML = " Lastname: " + lname.value;
-  document.getElementById("gender_here").innerHTML = " Gender: " + gender.value;
+  var e = document.getElementById("gender");
+  document.getElementById("gender_here").innerHTML = " Gender: " + e.options[e.selectedIndex].text;
   document.getElementById("age_here").innerHTML = " Age: " + age.value;
   document.getElementById("mail_here").innerHTML = " Email address: " + mail.value;
   document.getElementById("web_here").innerHTML = " Website address: " + web.value;
